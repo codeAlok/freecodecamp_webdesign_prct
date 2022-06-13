@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", "initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <!-- Main section -->
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1 id="title" class="text-center"> Survey Form</h1>
+        <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+      </header>
+
+      <!-- Form Section -->
+      <form id="survey-form">
+        <!-- Basic details -->
+        <div class="division">
+          <label id="name-label">Name:</label>
+          <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="division">
+            <label id="email-label">Email:</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="division">
+          <label id="number-label">Age:</label>
+          <input id="number" type="number" min="10" max="120" placeholder="age" required>
+        </div>
+        <!-- Dropdown section -->
+        <div class="division">
+          <p>What you want to be?</p>
+          <select id="dropdown">
+            <option>Choose one</option>
+            <option>Data scientist</option>
+            <option>Data Engineer</option>
+            <option>Web Developer</option>
+            <option>Web Designer</option>
+          </select> 
+        </div>
+        <!-- Radio button section -->
+        <div class="division">
+          <p>Your favouraite company?</p>
+          <label >
+            <input type="radio" name="fav-mnc" value="google">Google
+          </label>
+          <label >
+            <input type="radio" name="fav-mnc" value="microsoft">Microsoft
+          </label>
+          <label >
+            <input type="radio" name="fav-mnc" value="amazon">Amazon
+          </label>
+        </div>
+
+        <!-- Checkbox section -->
+        <div class="division">
+          <p> What are the places you want to visit</p>
+          
+          <label>
+            <input type="checkbox" value="manali">Manali
+          </label> 
+          <label>
+            <input type="checkbox" value="ladakh">Ladakh
+          </label>
+          <label>
+            <input type="checkbox" value="gujrat">Gujrat
+          </label>
+          <label>
+            <input type="checkbox" value="agra">Agra
+          </label> 
+          <label>
+            <input type="checkbox" value="delhi">Delhi
+          </label>
+         </div> 
+         <!-- Textarea -->
+         <div class="division">
+           <label>Tell something about your passion.
+            <textarea rows="8" cols="20" placeholder="write about your passion here"> </textarea>
+           </label>
+          </div>
+            <!-- Submit button -->
+          <div class="division">
+            <button id="submit" value="submit" >Submit</button>
+          </div>
+      </form>
+    </div>
+  </body>
+</html>  
