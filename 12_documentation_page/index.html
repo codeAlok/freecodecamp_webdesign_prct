@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation page</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Node documents</header>
+        <ul>
+            <li><a class="nav-link" href="#Question_1">Question 1</a></li>
+            <li><a class="nav-link" href="#Question_2">Question 2</a></li>
+            <li><a class="nav-link" href="#Question_3">Question 3</a></li>
+            <li><a class="nav-link" href="#Question_4">Question 4</a></li>
+            <li><a class="nav-link" href="#Question_5">Question 5</a></li>
+            <li><a class="nav-link" href="#Question_6">Question 6</a></li>
+            <li><a class="nav-link" href="#Question_7">Question 7</a></li>
+        </ul>
+    </nav>
+  
+    <main id="main-doc">
+        <section class="main-section" id="Question_1">
+            <header>Question 1</header>
+            <p>Given an array, we have to find the smallest element in the array.
+                <code> Example 1:
+                    Input: arr[] = {2,5,1,3,0};
+                    Output: 0
+                    Explanation: 0 is the smallest element in the array. 
+                    
+                    Example2: 
+                    Input: arr[] = {8,10,5,7,9};
+                    Output: 5
+                    Explanation: 5 is the smallest element in the array.</code>
+            </p>
+            
+            <ul>
+                <li>Sort the array in ascending order.</li>
+                <li>Print the 0th index.</li>
+            </ul>
+        </section>
+        <section class="main-section"  id="Question_2">
+            <header>Question 2</header>
+            <p>Given an array, we have to find the sum of all the elements in the array.
+                <code>Example 1:
+                    Input: N = 5, array[] = {1,2,3,4,5}
+                    Output: 15
+                    Explanation: Sum of all the elements is 1+2+3+4+5 = 15
+                    
+                    Example 2:
+                    Input:  N=6, array[] = {1,2,1,1,5,1}
+                    Output: 11
+                    Explanation: Sum of all the elements is 1+2+1+1+5+1 = 11
+                </code>
+            </p>
+            
+            
+            <ul>
+                <li>Using for loop traverse through the array and while traversing  maintain  a variable for storing sum of the elements in the array.</li>
+                <li>After completing the traversal simply print the sum.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Question_3">
+            <header>Question 3</header>
+            <p>Given an array, we have to find the largest element in the array.
+                <code>Example 1:
+                    Input: arr[] = {2,5,1,3,0};
+                    Output: 5
+                    Explanation: 5 is the largest element in the array. 
+                    
+                    Example2: 
+                    Input: arr[] = {8,10,5,7,9};
+                    Output: 10
+                    Explanation: 10 is the largest element in the array. 
+                </code>
+            </p>
+            
+            <ul>
+                <li>Sort the array in ascending order.</li>
+                <li>Print the (size of the array -1)th index.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Question_4">
+            <header>Question 4</header>
+            <p>Find all the non-repeating elements for a given array. Outputs can be in any order.
+                <code>Example 1:
+                    Input:
+                     Nums = [1,2,-1,1,3,1]
+                    Output:
+                     2,-1,3
+                    Explanation:
+                     1 is the only element in the given array which occurs thrice in the array. -1,2,3 occurs only once and hence, these are non-repeating elements of the given array.    
+                </code>
+            </p>
+            <p>nested loop to check if picked</p>
+            <ul>
+                <li>Start iterating the array to pick an element.</li>
+                <li>Use another nested loop to check if picked elements repeat in the array.</li>
+                <li>If the inside nested loop reaches the end of the array for a picked element, it indicates it is a non-repeating element and we print it.</li>
+                <li>If not, we move to pick another element.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Question_5">
+            <header>Question 5</header>
+            <p>Given an array, we have to find the sum of all the elements in the array.
+                <code>Example 1:
+                    Input: N = 5, array[] = {1,2,3,4,5}
+                    Output: 15
+                    Explanation: Sum of all the elements is 1+2+3+4+5 = 15
+                    
+                    Example 2:
+                    Input:  N=6, array[] = {1,2,1,1,5,1}
+                    Output: 11
+                    Explanation: Sum of all the elements is 1+2+1+1+5+1 = 11
+
+                </code>
+            </p>
+           
+            <ul>
+                <li>Using for loop traverse through the array and while traversing  maintain  a variable for storing sum of the elements in the array.</li>
+                <li>After completing the traversal simply print the sum.</li>
+                <li>list 3</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Question_6">
+            <header>Question 6</header>
+            <p>Given an array of integers, having some duplicate elements, sort the array by frequency.
+                <code>Example 1:
+                    Input: N = 8, array[] = {1,2,3,2,4,3,1,2}
+                    Output: 2 2 2 1 1 3 3 4 
+                    Explanation: Since  2 is present 3 times in an array , so print it 3 times ,then print ‘1’ 2 times and then ‘3’ 2 times and 4 has least frequency, it will be printed at last.
+                    
+                </code>
+            </p>
+            <p>elements are of the same frequency remain</p>
+            <ul>
+                <li>Sort the given array.</li>
+                <li>Now create a 2d array having the first row for storing distinct elements and a second row for maintaining their frequency.</li>
+                <li>Now sort the elements according to their frequency and if two elements are of the same frequency remain them in the sorted order.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Question_7">
+            <header>Question 7</header>
+            <p>Given an array of N integers, write a program to add an array element at the beginning, end, and at a specific position.
+                <code>Example:
+                    Input: N = 5, array[] = {1,2,3,4,5}
+                    insertbeginning(6)
+                    insertending(7)
+                    insertatpos(8,4)
+                    Output: 6,1,2,8,3,4,5,7
+                    Explanation: 6 is added at the beginning and 7 is added at the end and 8 is added at position 4 
+                </code>
+            </p>
+            <p>set to get the number of unique elements</p>
+            <ul>
+                <li>Iterative over the array using a for loop.</li>
+                <li>Now use another for loop to check the number of elements having value less than the current element.</li>
+                <li>We can use a set to get the number of unique elements having value less than the current element.</li>
+                <li>Number of such unique elements + 1 is the rank of that element.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
