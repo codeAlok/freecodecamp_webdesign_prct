@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background: linear-gradient(45deg, rgba(34, 23,56,0.5), rgba(26, 64, 74, 0.6), rgba(86, 34, 65, 0.7));
+} */
+a{
+    text-decoration: none;
+}
+
+h2{
+    text-align: center;
+    margin: 0.8rem 0 0.5rem 0;
+}
+
+/* ***** Header-section ***** */
+#header{
+    width: 100vw;
+    min-height: 8vh;
+    border: 2px solid black;
+    /* position: fixed;
+    top: 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    margin-left: 5%;
+}
+
+#navbar{
+    width: 80%;
+}
+#navbar ul{
+    float: right;
+    margin-right: 5%;
+}
+#navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+
+
+/* ***** Welcome-section ****** */
+#welcome-section{
+
+    width: 100vw;
+    height: 92vh;
+    position: relative;
+}
+
+.hello{
+    border: 2px solid red;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 45%;
+}
+
+.hello span{
+    font-size: 2rem;
+}
+
+.hello p{
+    
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+}
+#welcome-section img{
+    margin: 1rem;
+    position: absolute;
+    right: 5%;
+    height: 60%;
+    top: 15%;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+/* **** About-section ****** */
+#about{
+   position: relative;
+    width: 100vw;
+    height: 80vh;
+    
+}
+
+#about .pic{
+    position: absolute;
+    left: 5%;
+    max-width: 40%;
+    height: 100%;
+}
+
+#about .pic img{
+    margin: 50% 0;
+    height: 50%;
+
+}
+
+#about .content{
+    position: absolute;
+    width: 50%;
+    right: 5%;
+}
+
+/* ***** education -section ****** */
+#education{
+    width: 60%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#education .study{
+    margin: 1rem 0;
+    
+}
+
+/* ****** Projects ******* */
