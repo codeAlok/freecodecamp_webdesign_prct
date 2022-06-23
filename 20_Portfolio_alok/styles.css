@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-/* body{
+body{
     background: linear-gradient(45deg, rgba(34, 23,56,0.5), rgba(26, 64, 74, 0.6), rgba(86, 34, 65, 0.7));
-} */
+}
 a{
     text-decoration: none;
 }
@@ -18,14 +18,18 @@ h2{
 
 /* ***** Header-section ***** */
 #header{
+    border: 2px solid rgb(252, 145, 5);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     width: 100vw;
     min-height: 8vh;
-    border: 2px solid black;
-    /* position: fixed;
-    top: 0; */
+    position: fixed;
+    top: 0;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(45deg, rgb(109, 57, 57), rgb(39, 103, 221));
 }
 #logo{
     margin-left: 5%;
@@ -105,7 +109,9 @@ h2{
     position: absolute;
     width: 50%;
     right: 5%;
+    top: 5%;
 }
+
 
 /* ***** education -section ****** */
 #education{
@@ -120,3 +126,46 @@ h2{
 }
 
 /* ****** Projects ******* */
+#projects{
+    width: 100%;
+}
+
+#projects .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.project-tile{
+    width: 40%;
+}
+
+.project-tile a img{
+    background-image: cover;
+    width: 100%;
+}
+
+/* ******* footer ****** */
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: gray;
+}
+
+#footer a img{
+    margin: 0 1em;
+    height: 5vh;
+    
+}
+
+@media (max-width: 500px){
+    #navbar ul li{
+        margin: 0 3px;
+    }
+}
+
+@media (max-width: )
